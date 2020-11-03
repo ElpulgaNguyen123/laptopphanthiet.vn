@@ -1,0 +1,168 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0px;
+
+    .main {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1da0f2;
+    }
+
+    .right-pane {
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+
+        .searchbox {
+            overflow: hidden;
+            height: 2.2rem;
+            border: 1px solid $main;
+            border-radius: 0px;
+            display: flex;
+            align-items: center;
+
+            &:focus {
+                background-color: red;
+            }
+
+            .searchbox-icon {
+                color: #657786;
+                font-size: 1.25rem;
+                padding-left: 15px;
+                width: 10%;
+            }
+
+            @include mediaMd {
+                .searchbox-icon {
+                    color: #657786;
+                    font-size: 1.25rem;
+                    padding-left: 15px;
+                    width: 15%;
+                }
+            }
+
+            .searchbox-input {
+                height: 100%;
+                flex-grow: 1;
+                flex-shrink: 1;
+                padding: 0px 10px;
+                display: flex;
+
+                .input {
+                    flex-grow: 1;
+                    background-color: inherit;
+                    border: none;
+                    height: 100%;
+                    font-size: 0.98rem;
+                    font-weight: 400;
+                    color: black;
+
+                    &::placeholder {
+                        color: #798b9a;
+                    }
+                }
+            }
+        }
+
+        .searchbox-searchlistVisible {
+            border: 1px solid #1da0f2;
+            z-index: 9999;
+
+            .searchbox-icon {
+                color: #1da0f2;
+            }
+        }
+
+        .searchlist {
+            display: none;
+            box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.35);
+            border-radius: 5px;
+            overflow: hidden;
+
+            &-header {
+                font-family: BlinkMacSystemFont;
+                display: flex;
+                padding: 15px 25px 15px 15px;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #38444e;
+
+                &-title {
+                    color: #eee;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+
+                &-clear {
+                    cursor: pointer;
+                    height: 25px;
+                    width: 90px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: #1da0f2;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                    border-radius: 20px;
+
+                    &:hover {
+                        background-color: #1b3448;
+                    }
+                }
+            }
+
+            .searchlist-item {
+                font-family: BlinkMacSystemFont;
+                cursor: pointer;
+                padding: 12px 15px;
+                height: 60px;
+                border-bottom: 1px solid #38444e;
+                display: flex;
+                align-items: center;
+
+                &:last-child {
+                    border: none;
+                }
+
+                &:hover {
+                    background-color: #192734;
+                }
+
+                &-pic {
+                    width: 36px;
+                    height: 100%;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+
+                    &-img {
+                        height: 100%;
+                    }
+                }
+
+                &-info {
+                    height: 100%;
+                    flex-grow: 1;
+                    padding-left: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    &-name {
+                        color: #eee;
+                        font-weight: 600;
+                    }
+
+                    &-user {
+                        color: #657786;
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+        }
+    }
+}

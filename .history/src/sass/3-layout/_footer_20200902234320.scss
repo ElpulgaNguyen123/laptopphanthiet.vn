@@ -1,0 +1,114 @@
+#footer {
+    &.footer {
+        .foot-stage {
+            background-color: #F3F4F6;
+            padding: 25px 0 0;
+            margin-bottom: 25px;
+            .widget {
+                margin-bottom: 15px;
+                .widget-title {
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+                .logo-item {
+                    margin-bottom: 10px;
+                }
+                .link-list {
+                    list-style: none;
+                    padding: 0;
+                }
+
+                a {
+                    color: #333;
+                    font-size: 15px;
+                }
+            }
+        }
+        .footer-top {
+
+            .logo-widget {
+
+                text-align: center;
+
+                .social-widget{
+
+                    margin-top: 20px;
+
+                    text-align: center;
+                    li {
+                        display: inline-block;
+                        background-color:$main;
+                        width: 35px;
+                        font-size: 15px;
+                        height: 35px;
+                        line-height: 35px;
+                        border-radius: 50%;
+                        text-align: center;
+                        position: relative;
+                        margin-right: 10px;
+                        a {
+                            font-size: 20px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .link-list {
+                list-style: none;
+                margin-bottom: 20px;
+
+                li {
+
+                    padding: 5px 0px;
+                    font-weight: 500;
+
+
+                    a {
+                        display: block;
+                        color: black;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: $main;
+                        }
+                    }
+                }
+            }
+
+            padding: 100px 0px;
+
+            .footer-infos {
+                flex: 1 80%;
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            h5 {
+                margin-bottom: .5rem;
+                font-family: inherit;
+                font-weight: 600;
+                line-height: 1.4285714286;
+                color: #333;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(0,0,0,.15);
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    height: 0.5px;
+                    width: 80px;
+                    background: $main;
+                }
+            }
+        }
+        .footer-bottom {
+            padding: 10px 0px;
+            background: $gray-300;
+        }
+    }
+}

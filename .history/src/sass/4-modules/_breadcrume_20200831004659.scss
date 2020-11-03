@@ -1,0 +1,52 @@
+.breacrumb_bg {
+    // padding: 50px;
+    // background: $main-secondary;
+    padding: 100px 0px;
+    background-image: url(../images/breadcrume.jpg);
+    background-position: right center;
+    background-size: cover;
+
+    @include mediaMd {
+        padding:50px 0px;
+    }
+  
+    .big-title {
+        
+        font-size: 45px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        @include mediaMd {
+            font-size: 25px;
+        }
+       
+    }
+}
+.breadcrumb {
+    background: none;
+    color: white;
+    display: block;
+
+    a {
+        color: white;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    span.active {
+        color: white;
+        font-weight: 300;
+    }
+
+    .breadcrumb-item::before {
+        display: inline-block;
+        padding-right: 0.5rem;
+        color: white;
+        content: "/";
+    }
+    .readcrumb-item:first-child::before {
+            display: none;
+    }
+}

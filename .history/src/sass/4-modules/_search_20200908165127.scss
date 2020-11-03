@@ -1,0 +1,10 @@
+.back-search {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #F44336;
+    z-index: 99999;
+    transition: 0.4s;
+    height: 100%;
+    transform: scale(3);
+}

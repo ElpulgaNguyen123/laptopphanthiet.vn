@@ -1,0 +1,262 @@
+/*=============================================
+=            GLOBAL CSS START            =
+=============================================*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+.h1 {
+    font-size: 3em;
+}
+
+h2,
+.h2 {
+    font-size: 2.25em;
+}
+
+h3,
+.h3 {
+    font-size: 1.75em;
+}
+
+h4,
+.h4 {
+    font-size: 1.125em;
+}
+
+h5,
+.h5 {
+    font-size: 1em;
+}
+
+h6,
+.h6 {
+    font-size: 0.75em;
+}
+
+
+@include mediaMd {
+
+    h1,
+    .h1 {
+        font-size: 2.5em;
+    }
+
+    h2,
+    .h2 {
+        font-size: 1.25em;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1.5em;
+    }
+
+    h4,
+    .h4 {
+        font-size: 1em;
+    }
+
+    h5,
+    .h5 {
+        font-size: 1em;
+    }
+
+    h6,
+    .h6 {
+        font-size: 0.75em;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h4.title-section {
+    font-size: 1.125em;
+}
+
+/* CONTAINER START */
+
+@include mediaXl {
+    .container {
+        max-width: 1270px;
+    }
+}
+
+/* CONTAINER END */
+
+/* BUTTON START */
+
+.btn {
+    padding: 5px 30px;
+    border-radius: 40px;
+    border: 0px;
+}
+
+.btn-pink {
+    background: $main;
+    color: white !important;
+    font-size: 20px;
+    width: 150px;
+}
+
+.call-btn {
+    padding: 20px 30px;
+    border-radius: 0px;
+
+    &:hover {
+        border: 2px solid $main;
+        background: none;
+        color: $main;
+        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+
+.btn-contact {
+    background: $main;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: all 0.4s;
+    margin-left: 15px;
+
+    &:hover {
+        background: white;
+        color: $main;
+        border: 1px solid $main;
+        transition: all 0.4s;
+
+    }
+}
+
+.btn-noef {
+    background:none;
+    color:$main;
+    font-size:12px;
+    padding: 5px 0px;
+
+    &:hover {
+        background:none;
+        color: $main;
+    }
+}
+
+.btn-main {
+    background:$main;
+}
+/* BUTTON END */
+
+
+/* SECTION START */
+.section-title {
+    position: relative;
+
+    .link-more {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        color: white;
+        @include easeOut;
+
+        &:hover {
+            text-decoration: none;
+            @include easeOut;
+
+            span {
+                margin-right: 10px;
+                @include easeOut;
+            }
+
+            i {
+                margin-left: 5px;
+                @include easeOut;
+            }
+        }
+    }
+
+    .relate_title {
+        border-bottom: 2px solid $main;
+        padding-bottom: 10px;
+    }
+}
+
+.section-page-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $gray-400;
+    align-items: center;
+
+    .form-group {
+        margin-bottom: 0px;
+        margin-right: 15px;
+        display: block;
+        margin-left: 15px;
+        border-left: 1px solid #dee2e6;
+
+        .form-control {
+            padding: 14px 30px;
+            border: 0px;
+            border-radius: 0px;
+            height: unset;
+        }
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+}
+
+/* SECTION END */
+
+/* PADDING START */
+
+.pd-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-section {
+    padding: 80px 0px;
+}
+
+.pd-lg-section {
+    padding: 150px 0px;
+}
+
+@include mediaMd {
+    .pd-lg-section {
+        padding: 50px 0px;
+    }
+
+    .pd-section {
+        padding: 40px 0px;
+    }
+}
+
+/* PADDING END */
+
+
+/* BUTTON START*/
+
+.Utbtn_main {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* BUTTON END*/
+
+
+/*=====   GLOBAL CSS END   ======*/

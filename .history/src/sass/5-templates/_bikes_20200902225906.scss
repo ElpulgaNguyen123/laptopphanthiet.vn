@@ -1,0 +1,139 @@
+/*=============================================
+=            Section BIKES START            =
+=============================================*/
+
+.soph_cate_ {
+
+    .sidebar__right.mobie_screen {
+        display: none;
+    }
+
+    .sidebar__right {
+
+        .custom-control {
+            margin-left: 0px;
+        }
+
+        .button-ctr {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        @include mediaMd {
+            .button-ctr {
+                padding: 15px;
+                flex-direction: collumn !important;
+
+                .btn-main {
+                    font-size: 12px;
+                }
+
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    @include mediaMd {
+        .bg_grey {
+            position: fixed;
+            height: 100%;
+            background: #00000080;
+            top: 0;
+            width: 100%;
+            right: 0;
+            z-index: 9999;
+            display: none;
+            transition: all 0.4s;
+
+            &.showed {
+                display: block !important;
+                transition: all 0.4s;
+            }
+        }
+
+        .sidebar__right.products_filter {
+            position: fixed;
+            height: 100%;
+            background: white;
+            top: 0;
+            width: 250px;
+            display: none;
+            transition: all 0.4s ease-out;
+            transition-delay: .5s;
+            right: -100%;
+            z-index: 99999;
+            box-shadow: -2px -4px 20px 0px #d9d9d9, 12px 1px 3px #ffffff;
+
+            &.showed {
+                display: block !important;
+                right: 0;
+                transition: all 0.4s ease-out;
+                transition-delay: .5s;
+            }
+
+            .item {
+
+                &.radio-button {
+                    display: none;
+                }
+    
+                @include mediaMd {
+                    &.radio-button {
+                        display: block;
+                    }
+                }
+    
+
+                h3 {
+                    padding: 10px;
+                    padding-top: 10px;
+                    margin-bottom: 0px;
+                    font-size: 14px;
+
+                    .radio-button {
+                        display: none;
+                    }
+
+                    @include mediaMd {
+                        a {
+                            font-size: 12px;
+                        }
+
+                    }
+                }
+            }
+
+            .list-group-item {
+                padding: 5px;
+            }
+        }
+
+        .sidebar__right.mobie_screen {
+            display: block;
+            padding: 5px 0px;
+            margin-bottom: 20px;
+            color: white;
+
+            button {
+                display: block;
+                background: $main;
+                color: white;
+                padding: 10px;
+                width: 100%;
+                border-radius: 0px;
+            }
+        }
+
+        .soph__box {
+            .section-page-title {
+                display: none;
+            }
+        }
+    }
+}
+
+/*=====  End of SBIKES  ======*/

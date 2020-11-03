@@ -1,0 +1,104 @@
+#thuonghieu {
+    ul {
+        list-style-type: none;
+        flex-flow: column wrap;
+    }
+
+    li {
+        display: inline-block;
+        flex: 1;
+        width: 49%;
+
+        a {
+            border: 1px solid #fff;
+            padding: 10px;
+            display: block;
+            position: relative;
+            margin: 10px;
+            box-shadow: 30px 30px 72px #ebebeb, -30px -30px 72px #ffffff;
+            background: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+    }
+
+
+
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    label {
+        border: 1px solid #fff;
+        padding: 10px;
+        display: block;
+        position: relative;
+        margin: 10px;
+        box-shadow: 30px 30px 72px #ebebeb, -30px -30px 72px #ffffff;
+        background: white;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+            box-shadow: 0 3px 6px #009688, 0 3px 6px #009688;
+            transition: 0.4s;
+        }
+    }
+
+
+    label:before {
+        background-color: $main;
+        color: white;
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        border: 1px solid grey;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 28px;
+        transition-duration: 0.4s;
+        transform: scale(0);
+        z-index: 2;
+    }
+
+    label img {
+        transition-duration: 0.2s;
+        transform-origin: 50% 50%;
+    }
+
+    :checked+label {
+        border-color: #ddd;
+    }
+
+    :checked+label:before {
+        content: "✓";
+        background-color: grey;
+        transform: scale(1);
+    }
+
+    :checked+label img {
+        transform: scale(0.9);
+        /* box-shadow: 0 0 5px #333; */
+        z-index: -1;
+    }
+
+    @include mediaMd {
+
+        li {
+            display: inline-block;
+            flex: 1;
+            width: 30%;
+        }
+
+        label {
+            padding: 0px;
+        }
+    }
+}

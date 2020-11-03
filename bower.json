@@ -1,0 +1,27 @@
+{
+  "name": "template",
+  "authors": [
+    "Thắng Nguyễn"
+  ],
+  "description": "giao diện",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.4.1",
+    "owl.carousel": "^2.3.4",
+    "animate-js": "^0.0.3",
+    "jquery": "^3.5.1",
+    "animatewithsass": "https://github.com/geoffgraham/animate.scss.git#^3.2.2",
+    "animate-sass": "^0.8.2",
+    "wow": "wow-mit#^1.3.0"
+  }
+}
